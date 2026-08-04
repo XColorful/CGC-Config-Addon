@@ -1,7 +1,7 @@
-package dev.xcolorful.forge;
+package dev.xcolorful.cgcconfig.forge;
 
-import dev.xcolorful.CgcConfig;
-import dev.xcolorful.forgeclient.CgcConfigForgeClient;
+import dev.xcolorful.cgcconfig.CgcConfig;
+import dev.xcolorful.cgcconfig.forgeclient.CgcConfigForgeClient;
 import net.minecraftforge.fml.common.Mod;
 import xiao.customgun.CustomGun;
 import xiao.customgun.core.api.common.McSide;

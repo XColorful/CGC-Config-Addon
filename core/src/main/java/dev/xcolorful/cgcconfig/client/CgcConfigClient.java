@@ -1,4 +1,4 @@
-package dev.xcolorful.client;
+package dev.xcolorful.cgcconfig.client;
 
 public class CgcConfigClient {
 

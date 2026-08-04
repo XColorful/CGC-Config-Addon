@@ -5,10 +5,10 @@
  * Source: https://github.com/XColorful/Custom-Gun-Continued
  */
 
-package dev.xcolorful.client.init;
+package dev.xcolorful.cgcconfig.client.init;
 
-import dev.xcolorful.client.init.registry._ClientInputCategory;
-import dev.xcolorful.client.input.config.ConfigKey;
+import dev.xcolorful.cgcconfig.client.init.registry._ClientInputCategory;
+import dev.xcolorful.cgcconfig.client.input.config.ConfigKey;
 import net.minecraft.client.KeyMapping;
 import org.jetbrains.annotations.ApiStatus;
 

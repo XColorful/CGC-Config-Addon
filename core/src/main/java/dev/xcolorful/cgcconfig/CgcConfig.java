@@ -1,4 +1,4 @@
-package dev.xcolorful;
+package dev.xcolorful.cgcconfig;
 
 import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;

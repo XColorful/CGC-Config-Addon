@@ -12,9 +12,9 @@
  * Source: https://github.com/XColorful/Custom-Gun-Continued
  */
 
-package dev.xcolorful.core.api.minecraft.input;
+package dev.xcolorful.cgcconfig.core.api.minecraft.input;
 
-import dev.xcolorful.CgcConfig;
+import dev.xcolorful.cgcconfig.CgcConfig;
 
 public class _CustomInputKeyTag {
 

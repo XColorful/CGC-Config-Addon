@@ -1,6 +1,6 @@
-package dev.xcolorful.forgeclient;
+package dev.xcolorful.cgcconfig.forgeclient;
 
-import dev.xcolorful.client.CgcConfigClient;
+import dev.xcolorful.cgcconfig.client.CgcConfigClient;
 
 public class CgcConfigForgeClient {
 

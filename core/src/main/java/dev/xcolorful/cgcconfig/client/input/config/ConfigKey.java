@@ -12,12 +12,12 @@
  * Source: https://github.com/XColorful/Custom-Gun-Continued
  */
 
-package dev.xcolorful.client.input.config;
+package dev.xcolorful.cgcconfig.client.input.config;
 
 import com.mojang.blaze3d.platform.InputConstants;
-import dev.xcolorful.CgcConfig;
-import dev.xcolorful.client.api.minecraft.input._CustomInputKey;
-import dev.xcolorful.client.init.registry._ClientInputCategory;
+import dev.xcolorful.cgcconfig.CgcConfig;
+import dev.xcolorful.cgcconfig.client.api.minecraft.input._CustomInputKey;
+import dev.xcolorful.cgcconfig.client.init.registry._ClientInputCategory;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import org.lwjgl.glfw.GLFW;

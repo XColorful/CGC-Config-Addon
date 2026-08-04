@@ -5,10 +5,10 @@
  * Source: https://github.com/XColorful/Custom-Gun-Continued
  */
 
-package dev.xcolorful.forgeclient.init;
+package dev.xcolorful.cgcconfig.forgeclient.init;
 
-import dev.xcolorful.CgcConfig;
-import dev.xcolorful.client.init._ClientKeyMappingRegistry;
+import dev.xcolorful.cgcconfig.CgcConfig;
+import dev.xcolorful.cgcconfig.client.init._ClientKeyMappingRegistry;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

@@ -5,9 +5,9 @@
  * Source: https://github.com/XColorful/Custom-Gun-Continued
  */
 
-package dev.xcolorful.client.init.registry;
+package dev.xcolorful.cgcconfig.client.init.registry;
 
-import dev.xcolorful.client.api.minecraft.input._CustomInputCategory;
+import dev.xcolorful.cgcconfig.client.api.minecraft.input._CustomInputCategory;
 
 public class _ClientInputCategory {
     public static final String CONFIG = _CustomInputCategory.CONFIG.getRegistryLocation()
