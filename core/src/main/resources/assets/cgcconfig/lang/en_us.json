@@ -1,4 +1,17 @@
 {
   "key.category.cgcconfig.config": "CGC Config Addon: Config",
-  "key.cgcconfig.config": "Config"
+  "key.cgcconfig.config": "Config",
+
+  "config.category.cgcconfig.client": "CGC Config Addon: Client config",
+  "config.cgcconfig.key": "Key config",
+  "config.cgcconfig.render": "Render config",
+  "config.cgcconfig.resource": "Resource config",
+  "config.cgcconfig.sound": "Sound config",
+  "config.cgcconfig.zoom": "Zoom config",
+  "config.category.cgcconfig.common": "CGC Config Addon: Common config",
+  "config.cgcconfig.ammo": "Ammo config",
+  "config.cgcconfig.gun": "Gun config",
+  "config.cgcconfig.other": "Other config",
+  "config.category.cgcconfig.server": "CGC Config Addon: Server config",
+  "config.cgcconfig.sync": "Sync config"
 }

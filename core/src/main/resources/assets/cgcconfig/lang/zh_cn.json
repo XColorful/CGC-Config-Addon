@@ -1,4 +1,17 @@
 {
   "key.category.cgcconfig.config": "自定义枪械永续配置扩展",
-  "key.cgcconfig.config": "配置"
+  "key.cgcconfig.config": "配置",
+
+  "config.category.cgcconfig.client": "自定义枪械永续配置扩展：客户端配置",
+  "config.cgcconfig.key": "按键配置",
+  "config.cgcconfig.render": "渲染配置",
+  "config.cgcconfig.resource": "资源配置",
+  "config.cgcconfig.sound": "声音配置",
+  "config.cgcconfig.zoom": "开镜配置",
+  "config.category.cgcconfig.common": "自定义枪械永续配置扩展：双端配置",
+  "config.cgcconfig.ammo": "子弹配置",
+  "config.cgcconfig.gun": "枪械配置",
+  "config.cgcconfig.other": "杂项配置",
+  "config.category.cgcconfig.server": "自定义枪械永续配置扩展：服务端配置",
+  "config.cgcconfig.sync": "同步配置"
 }

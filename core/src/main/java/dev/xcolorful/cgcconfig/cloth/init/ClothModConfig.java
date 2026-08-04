@@ -1,0 +1,77 @@
+/*
+ * Copyright (c) 2024-2026 MCModderAnchor (https://github.com/MCModderAnchor)
+ * SPDX-License-Identifier: GPL-3.0-only
+ *
+ * Source: https://github.com/MCModderAnchor/TACZ
+ */
+
+/*
+ * Copyright (c) 2026 XiaoColorful (https://github.com/XColorful)
+ * SPDX-License-Identifier: GPL-3.0-only
+ *
+ * Source: https://github.com/XColorful/Custom-Gun-Continued
+ */
+
+package dev.xcolorful.cgcconfig.cloth.init;
+
+import dev.xcolorful.cgcconfig.cloth.config.common.ClothAmmoConfig;
+import dev.xcolorful.cgcconfig.cloth.config.common.ClothGunConfig;
+import dev.xcolorful.cgcconfig.cloth.config.common.ClothOtherConfig;
+import dev.xcolorful.cgcconfig.cloth.config.server.ClothSyncConfig;
+import me.shedaniel.clothconfig2.api.ConfigBuilder;
+import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
+import net.minecraft.network.chat.Component;
+
+import java.util.function.Supplier;
+
+public class ClothModConfig {
+
+    public static void init() {
+        CommonConfig.init();
+        ServerConfig.init();
+    }
+
+    public static class CommonConfig {
+        public static Supplier<ConfigBuilder> configBuilder;
+
+        private static void init() {
+            CommonConfig.configBuilder = CommonConfig::getConfigBuilder;
+        }
+        private static ConfigBuilder getConfigBuilder() {
+            ConfigBuilder builder = ConfigBuilder.create()
+                    .setTitle(Component.translatable("config.category.cgcconfig.common")); {
+                ConfigEntryBuilder entryBuilder = builder.entryBuilder();
+
+                ClothAmmoConfig.init(builder, entryBuilder);
+                ClothGunConfig.init(builder, entryBuilder);
+                ClothOtherConfig.init(builder, entryBuilder);
+            }
+
+            builder.setGlobalized(true);
+            builder.setGlobalizedExpanded(false);
+
+            return builder;
+        }
+    }
+
+    public static class ServerConfig {
+        public static Supplier<ConfigBuilder> configBuilder;
+
+        private static void init() {
+            ServerConfig.configBuilder = ServerConfig::getConfigBuilder;
+        }
+        private static ConfigBuilder getConfigBuilder() {
+            ConfigBuilder builder = ConfigBuilder.create()
+                    .setTitle(Component.translatable("config.category.cgcconfig.server")); {
+                ConfigEntryBuilder entryBuilder = builder.entryBuilder();
+
+                ClothSyncConfig.init(builder, entryBuilder);
+            }
+
+            builder.setGlobalized(true);
+            builder.setGlobalizedExpanded(false);
+
+            return builder;
+        }
+    }
+}
