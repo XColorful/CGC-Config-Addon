@@ -14,11 +14,11 @@
 
 package dev.xcolorful.cgcconfig.cloth.config.client;
 
+import dev.xcolorful.customgun.client.config.KeyConfig;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
 import net.minecraft.network.chat.Component;
-import xiao.customgun.client.config.KeyConfig;
 
 public class ClothKeyConfig {
 

@@ -14,11 +14,11 @@
 
 package dev.xcolorful.cgcconfig.cloth.config.common;
 
+import dev.xcolorful.customgun.core.config.OtherConfig;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
 import net.minecraft.network.chat.Component;
-import xiao.customgun.core.config.OtherConfig;
 
 public class ClothOtherConfig {
 

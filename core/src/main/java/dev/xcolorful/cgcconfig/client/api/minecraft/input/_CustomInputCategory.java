@@ -9,12 +9,12 @@ package dev.xcolorful.cgcconfig.client.api.minecraft.input;
 
 import dev.xcolorful.cgcconfig.CgcConfig;
 import dev.xcolorful.cgcconfig.core.api.minecraft.input._CustomInputCategoryTag;
+import dev.xcolorful.customgun.CustomGun;
+import dev.xcolorful.customgun.client.api.minecraft.input.CustomInputCategory;
+import dev.xcolorful.customgun.client.api.minecraft.input.ICustomInputCategory;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.Nullable;
-import xiao.customgun.CustomGun;
-import xiao.customgun.client.api.minecraft.input.CustomInputCategory;
-import xiao.customgun.client.api.minecraft.input.ICustomInputCategory;
 
 public enum _CustomInputCategory implements ICustomInputCategory {
     CONFIG(_CustomInputCategoryTag.CONFIG);

@@ -1,17 +1,17 @@
 package dev.xcolorful.cgcconfig.cloth.gui;
 
 import dev.xcolorful.cgcconfig.cloth.api.gui.ClothConfigType;
+import dev.xcolorful.customgun.CustomGun;
+import dev.xcolorful.customgun.client.api.event.IClientTickEvent;
+import dev.xcolorful.customgun.client.util.ClientGuiUtils;
+import dev.xcolorful.customgun.core.api.event.EventPriority;
+import dev.xcolorful.customgun.core.api.event.EventType;
+import dev.xcolorful.customgun.core.api.event.IEvent;
+import dev.xcolorful.customgun.core.api.event.IEventHandler;
 import me.shedaniel.clothconfig2.api.ConfigScreen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import org.jetbrains.annotations.Nullable;
-import xiao.customgun.CustomGun;
-import xiao.customgun.client.api.event.IClientTickEvent;
-import xiao.customgun.client.util.ClientGuiUtils;
-import xiao.customgun.core.api.event.EventPriority;
-import xiao.customgun.core.api.event.EventType;
-import xiao.customgun.core.api.event.IEvent;
-import xiao.customgun.core.api.event.IEventHandler;
 
 public class ClothScreenManager implements IEventHandler {
     public static final ClothScreenManager INSTANCE = new ClothScreenManager();

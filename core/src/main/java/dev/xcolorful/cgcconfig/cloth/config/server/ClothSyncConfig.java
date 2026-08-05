@@ -14,12 +14,12 @@
 
 package dev.xcolorful.cgcconfig.cloth.config.server;
 
+import dev.xcolorful.customgun.core.config.SyncConfig;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
 import me.shedaniel.clothconfig2.impl.builders.SubCategoryBuilder;
 import net.minecraft.network.chat.Component;
-import xiao.customgun.core.config.SyncConfig;
 
 import java.util.Collections;
 

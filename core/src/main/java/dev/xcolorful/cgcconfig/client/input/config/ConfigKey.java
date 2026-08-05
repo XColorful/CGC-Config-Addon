@@ -19,17 +19,17 @@ import dev.xcolorful.cgcconfig.CgcConfig;
 import dev.xcolorful.cgcconfig.client.api.minecraft.input._CustomInputKey;
 import dev.xcolorful.cgcconfig.client.init.registry._ClientInputCategory;
 import dev.xcolorful.cgcconfig.cloth.gui.ClothScreenManager;
+import dev.xcolorful.customgun.client.api.event.IInputKeyEvent;
+import dev.xcolorful.customgun.client.api.event.IMouseButtonEvent;
+import dev.xcolorful.customgun.client.api.input.IInputKeyManager;
+import dev.xcolorful.customgun.client.api.input.IKeyConflictContext;
+import dev.xcolorful.customgun.client.api.input.IKeyMapping;
+import dev.xcolorful.customgun.client.api.input.IKeyModifier;
+import dev.xcolorful.customgun.client.input.InputKey;
+import dev.xcolorful.customgun.client.util.ClientInputUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import org.lwjgl.glfw.GLFW;
-import xiao.customgun.client.api.event.IInputKeyEvent;
-import xiao.customgun.client.api.event.IMouseButtonEvent;
-import xiao.customgun.client.api.input.IInputKeyManager;
-import xiao.customgun.client.api.input.IKeyConflictContext;
-import xiao.customgun.client.api.input.IKeyMapping;
-import xiao.customgun.client.api.input.IKeyModifier;
-import xiao.customgun.client.input.InputKey;
-import xiao.customgun.client.util.ClientInputUtils;
 
 public final class ConfigKey extends InputKey {
 
