@@ -126,7 +126,8 @@ public final class ConfigKey extends InputKey implements IEventHandler {
             if (lastScreen != null) {
                 // 上次的没关闭，切换到下个循环
                 this.lastConfigIndex = (this.lastConfigIndex + 1) % CLOTH_CONFIG_TYPES.length;
-                Screen newScreen = CLOTH_CONFIG_TYPES[this.lastConfigIndex].create(currentScreen);
+                Screen newScreen = CLOTH_CONFIG_TYPES[this.lastConfigIndex]
+                        .create(null); // 循环切换的时候算作一个层级，不然一次esc退不出去
                 ClientGuiUtils.setCurrentScreen(mc, newScreen);
                 this.lastScreen = newScreen;
                 return;
