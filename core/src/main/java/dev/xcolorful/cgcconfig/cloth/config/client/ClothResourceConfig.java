@@ -15,10 +15,21 @@
 package dev.xcolorful.cgcconfig.cloth.config.client;
 
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
+import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
+import net.minecraft.network.chat.Component;
+import xiao.customgun.client.config.ResourceConfig;
 
 public class ClothResourceConfig {
 
     public static void init(ConfigBuilder builder, ConfigEntryBuilder entryBuilder) {
+        ConfigCategory resourceConfig = builder.getOrCreateCategory(Component.translatable("config.cgcconfig.resource"));
+
+        resourceConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.resource.enable_lazy_client_asset_load"), ResourceConfig.ENABLE_LAZY_CLIENT_ASSET_LOAD.get())
+                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.resource.enable_lazy_client_asset_load.desc"))
+                        .setSaveConsumer(newValue -> ResourceConfig.ENABLE_LAZY_CLIENT_ASSET_LOAD.set(newValue))
+                        .build()
+        );
     }
 }
