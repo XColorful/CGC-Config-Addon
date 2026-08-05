@@ -1,7 +1,7 @@
 package dev.xcolorful.cgcconfig.cloth.api.gui;
 
-import dev.xcolorful.cgcconfig.cloth.gui.ClothClientModConfigScreen;
-import dev.xcolorful.cgcconfig.cloth.gui.ClothModConfigScreen;
+import dev.xcolorful.cgcconfig.cloth.gui.cloth.ClothClientModConfigScreen;
+import dev.xcolorful.cgcconfig.cloth.gui.cloth.ClothModConfigScreen;
 import net.minecraft.client.gui.screens.Screen;
 
 import java.util.function.Function;

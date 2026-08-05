@@ -5,7 +5,7 @@
  * Source: https://github.com/MCModderAnchor/TACZ
  */
 
-package dev.xcolorful.cgcconfig.cloth.gui;
+package dev.xcolorful.cgcconfig.cloth.gui.cloth;
 
 import dev.xcolorful.cgcconfig.cloth.init.ClothClientModConfig;
 import net.minecraft.client.gui.screens.Screen;
