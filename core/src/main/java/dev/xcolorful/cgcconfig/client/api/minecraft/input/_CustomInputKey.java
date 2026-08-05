@@ -15,12 +15,12 @@
 package dev.xcolorful.cgcconfig.client.api.minecraft.input;
 
 import dev.xcolorful.cgcconfig.core.api.minecraft.input._CustomInputKeyTag;
+import dev.xcolorful.customgun.CustomGun;
+import dev.xcolorful.customgun.client.api.minecraft.input.CustomInputKey;
+import dev.xcolorful.customgun.client.api.minecraft.input.ICustomInputKey;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.Nullable;
-import xiao.customgun.CustomGun;
-import xiao.customgun.client.api.minecraft.input.CustomInputKey;
-import xiao.customgun.client.api.minecraft.input.ICustomInputKey;
 
 public enum _CustomInputKey implements ICustomInputKey {
     // config
