@@ -2,6 +2,8 @@
   "key.category.cgcconfig.config": "CGC Config Addon: Config",
   "key.cgcconfig.config": "Config",
 
+  "config.category.cgcconfig.singleplayer_only": " (Singleplayer only)",
+
   "config.category.cgcconfig.client": "CGC Config Addon: Client config",
   "config.cgcconfig.key": "Key config",
   "config.cgcconfig.key.hold_to_aim": "Hold to aim",

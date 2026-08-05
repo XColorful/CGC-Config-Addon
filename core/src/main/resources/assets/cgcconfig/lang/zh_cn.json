@@ -2,6 +2,8 @@
   "key.category.cgcconfig.config": "自定义枪械永续配置扩展",
   "key.cgcconfig.config": "配置",
 
+  "config.category.cgcconfig.singleplayer_only": "（仅单人游戏）",
+
   "config.category.cgcconfig.client": "自定义枪械永续配置扩展：客户端配置",
   "config.cgcconfig.key": "按键配置",
   "config.cgcconfig.render": "渲染配置",

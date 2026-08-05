@@ -39,7 +39,8 @@ public class ClothModConfig {
         }
         private static ConfigBuilder getConfigBuilder() {
             ConfigBuilder builder = ConfigBuilder.create()
-                    .setTitle(Component.translatable("config.category.cgcconfig.common")); {
+                    .setTitle(Component.translatable("config.category.cgcconfig.common")
+                            .append(Component.translatable("config.category.cgcconfig.singleplayer_only"))); {
                 ConfigEntryBuilder entryBuilder = builder.entryBuilder();
 
                 ClothAmmoConfig.init(builder, entryBuilder);
@@ -62,7 +63,8 @@ public class ClothModConfig {
         }
         private static ConfigBuilder getConfigBuilder() {
             ConfigBuilder builder = ConfigBuilder.create()
-                    .setTitle(Component.translatable("config.category.cgcconfig.server")); {
+                    .setTitle(Component.translatable("config.category.cgcconfig.server")
+                            .append(Component.translatable("config.category.cgcconfig.singleplayer_only"))); {
                 ConfigEntryBuilder entryBuilder = builder.entryBuilder();
 
                 ClothSyncConfig.init(builder, entryBuilder);
