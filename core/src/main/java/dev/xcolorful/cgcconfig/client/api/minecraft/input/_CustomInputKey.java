@@ -19,7 +19,7 @@ import dev.xcolorful.customgun.CustomGun;
 import dev.xcolorful.customgun.client.api.minecraft.input.CustomInputKey;
 import dev.xcolorful.customgun.client.api.minecraft.input.ICustomInputKey;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.jetbrains.annotations.Nullable;
 
 public enum _CustomInputKey implements ICustomInputKey {
@@ -29,7 +29,7 @@ public enum _CustomInputKey implements ICustomInputKey {
     public final String tagName;
     public final String categoryName;
     public final String registryName;
-    public final ResourceLocation registryLocation;
+    public final Identifier registryLocation;
     public final Component categoryLang;
     _CustomInputKey(String name) {
         this(_CustomInputKeyTag.PREFIX, name);
@@ -50,7 +50,7 @@ public enum _CustomInputKey implements ICustomInputKey {
     @Override public String getRegistryName() {
         return this.registryName;
     }
-    @Override public ResourceLocation getRegistryLocation() {
+    @Override public Identifier getRegistryLocation() {
         return this.registryLocation;
     }
 
