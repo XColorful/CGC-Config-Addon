@@ -93,9 +93,9 @@ public class ClothRenderConfig {
                         .build()
         );
         renderConfig.addEntry(
-                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.first_person_bullet_tracer_enable"), RenderConfig.FIRST_PERSON_BULLET_TRACER_ENABLE.get())
-                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.render.first_person_bullet_tracer_enable.desc"))
-                        .setSaveConsumer(newValue -> RenderConfig.FIRST_PERSON_BULLET_TRACER_ENABLE.set(newValue))
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.enable_first_person_bullet_tracer"), RenderConfig.ENABLE_FIRST_PERSON_BULLET_TRACER.get())
+                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.render.enable_first_person_bullet_tracer.desc"))
+                        .setSaveConsumer(newValue -> RenderConfig.ENABLE_FIRST_PERSON_BULLET_TRACER.set(newValue))
                         .build()
         );
         renderConfig.addEntry(
