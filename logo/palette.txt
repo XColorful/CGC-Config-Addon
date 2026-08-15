@@ -1,0 +1,7 @@
+background:AAAAAA
+grid:FFFFAA
+constraint:FF55FF
+isomorphic:FFAA00
+harness:FFAA00
+highlight:FFFFFF
+shadow:2A2A2A
