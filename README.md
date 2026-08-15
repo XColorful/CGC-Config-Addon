@@ -17,7 +17,7 @@
 ### 前置模组
 
 - 自定义枪械永续
-	- [Github Releases](https://github.com/XColorful/Custom-Gun-Continued/releases)
+	- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/custom-gun-continued) | [Modrinth](https://modrinth.com/mod/custom-gun-continued) | [Github Releases](https://github.com/XColorful/Custom-Gun-Continued/releases)
 - Cloth Config API
 	- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/cloth-config) | [Modrinth](https://modrinth.com/mod/cloth-config)
 
@@ -41,7 +41,7 @@ This mod is a configuration addon for [Custom Gun Continued](https://github.com/
 ### Prerequisites
 
 - Custom Gun Continued
-	- [Github Releases](https://github.com/XColorful/Custom-Gun-Continued/releases)
+	- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/custom-gun-continued) | [Modrinth](https://modrinth.com/mod/custom-gun-continued) | [Github Releases](https://github.com/XColorful/Custom-Gun-Continued/releases)
 - Cloth Config API
 	- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/cloth-config) | [Modrinth](https://modrinth.com/mod/cloth-config)
 
