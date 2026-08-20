@@ -29,7 +29,7 @@
 
 衍生内容：
 - [自定义枪械永续](https://github.com/XColorful/Custom-Gun-Continued)：本模组是采用 [GPL-3.0-only](https://www.gnu.org/licenses/gpl-3.0.txt) 许可证的[自定义枪械永续](https://github.com/XColorful/Custom-Gun-Continued)的配置扩展模组
-- [TaCZ](https://github.com/MCModderAnchor/TACZ)：本模组是基于采用 [GPL-3.0-only](https://www.gnu.org/licenses/gpl-3.0.txt) 许可证的 [TaCZ](https://github.com/MCModderAnchor/TACZ) 1.1.8 的衍生作品；由于 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)，本模组不包含原美术资产
+- [TaCZ](https://github.com/MCModderAnchor/TACZ)：本模组是基于采用 [GPL-3.0-only](https://www.gnu.org/licenses/gpl-3.0.txt) 许可证的 [TaCZ](https://github.com/MCModderAnchor/TACZ) 1.1.8 的衍生作品；由于 [CC-BY-NC-ND-4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)，本模组不包含原美术资产
 
 # CGC Config Addon
 
@@ -58,4 +58,4 @@ This mod is a configuration addon for [Custom Gun Continued](https://github.com/
 
 Derivative content:
 - [Custom Gun Continued](https://github.com/XColorful/Custom-Gun-Continued): This mod is a configuration addon for [Custom Gun Continued](https://github.com/XColorful/Custom-Gun-Continued), licensed under [GPL-3.0-only](https://www.gnu.org/licenses/gpl-3.0.txt)
-- [TaCZ](https://github.com/MCModderAnchor/TACZ): This mod is a derivative work based on [TaCZ](https://github.com/MCModderAnchor/TACZ) 1.1.8, licensed under [GPL-3.0-only](https://www.gnu.org/licenses/gpl-3.0.txt). Due to the original art assets being licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/), this mod does not include any original art assets
+- [TaCZ](https://github.com/MCModderAnchor/TACZ): This mod is a derivative work based on [TaCZ](https://github.com/MCModderAnchor/TACZ) 1.1.8, licensed under [GPL-3.0-only](https://www.gnu.org/licenses/gpl-3.0.txt). Due to the original art assets being licensed under [CC-BY-NC-ND-4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/), this mod does not include any original art assets
