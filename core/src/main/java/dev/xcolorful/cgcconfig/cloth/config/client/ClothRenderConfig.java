@@ -39,6 +39,12 @@ public class ClothRenderConfig {
                         .build()
         );
         renderConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.disable_gun_tilting"), RenderConfig.DISABLE_GUN_TILTING.get())
+                        .setDefaultValue(false).setTooltip(Component.translatable("config.cgcconfig.render.disable_gun_tilting.desc"))
+                        .setSaveConsumer(newValue -> RenderConfig.DISABLE_GUN_TILTING.set(newValue))
+                        .build()
+        );
+        renderConfig.addEntry(
                 entryBuilder.startIntField(Component.translatable("config.cgcconfig.render.bullet_hole_particle_life"), RenderConfig.BULLET_HOLE_PARTICLE_LIFE.get())
                         .setDefaultValue(400).setMin(0).setMax(Integer.MAX_VALUE).setTooltip(Component.translatable("config.cgcconfig.render.bullet_hole_particle_life.desc"))
                         .setSaveConsumer(newValue -> RenderConfig.BULLET_HOLE_PARTICLE_LIFE.set(newValue))
@@ -123,9 +129,9 @@ public class ClothRenderConfig {
                         .build()
         );
         renderConfig.addEntry(
-                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.enable_resource_location_in_tooltip"), RenderConfig.ENABLE_RESOURCE_LOCATION_IN_TOOLTIP.get())
-                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.render.enable_resource_location_in_tooltip.desc"))
-                        .setSaveConsumer(newValue -> RenderConfig.ENABLE_RESOURCE_LOCATION_IN_TOOLTIP.set(newValue))
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.append_resource_location_in_tooltip"), RenderConfig.APPEND_RESOURCE_LOCATION_IN_TOOLTIP.get())
+                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.render.append_resource_location_in_tooltip.desc"))
+                        .setSaveConsumer(newValue -> RenderConfig.APPEND_RESOURCE_LOCATION_IN_TOOLTIP.set(newValue))
                         .build()
         );
         renderConfig.addEntry(
