@@ -75,7 +75,7 @@ dependencies {
 
     implementation project(":core")
 
-    implementation files(customgun_local)
+    implementation "${customgun_maven}"
 }
 
 tasks.named('jar', Jar).configure {
