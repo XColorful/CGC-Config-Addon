@@ -13,7 +13,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     compileOnly fg.deobf("net.minecraftforge:forge:${minecraft_version}-${forge_version}")
 
-    compileOnly fg.deobf(files(customgun_local))
+    compileOnly fg.deobf("${customgun_maven}")
     compileOnly fg.deobf("${cloth_config_maven}:${cloth_config_version}")
 }
 
