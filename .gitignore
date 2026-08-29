@@ -30,6 +30,3 @@ forge*changelog.txt
 
 # Obsidian
 .obsidian
-
-# Jar (Remove after main mod is published)
-/libs/*.jar

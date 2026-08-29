@@ -23,6 +23,8 @@
   "config.cgcconfig.render.bullet_hole_particle_life.desc": "弹孔粒子存在时间（tick）",
   "config.cgcconfig.render.bullet_hole_particle_fade_threshold": "弹孔粒子淡出阈值",
   "config.cgcconfig.render.bullet_hole_particle_fade_threshold.desc": "弹孔粒子渲染淡出阈值",
+  "config.cgcconfig.render.replace_vanilla_crosshair": "替换原版准心",
+  "config.cgcconfig.render.replace_vanilla_crosshair.desc": "持枪时是否替换原版准心",
   "config.cgcconfig.render.crosshair_type": "准心样式",
   "config.cgcconfig.render.crosshair_type.desc": "持枪时的准星样式",
   "config.cgcconfig.render.hit_marker_start_position": "命中标记的起始位置",
