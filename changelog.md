@@ -1,5 +1,8 @@
 ### 0.0.x
 
+#### 0.0.8
+- Port to Custom Gun Continued 0.0.8
+
 #### 0.0.5
 - Add mod logo
 - Fix config key modifier not working
