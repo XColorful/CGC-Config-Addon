@@ -57,8 +57,14 @@ public class ClothRenderConfig {
                         .build()
         );
         renderConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.replace_vanilla_crosshair"), RenderConfig.REPLACE_VANILLA_CROSSHAIR.get())
+                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.render.replace_vanilla_crosshair.desc"))
+                        .setSaveConsumer(newValue -> RenderConfig.REPLACE_VANILLA_CROSSHAIR.set(newValue))
+                        .build()
+        );
+        renderConfig.addEntry(
                 entryBuilder.startEnumSelector(Component.translatable("config.cgcconfig.render.crosshair_type"), CrosshairType.class, RenderConfig.CROSSHAIR_TYPE.get())
-                        .setDefaultValue(CrosshairType.DOT_1).setTooltip(Component.translatable("config.cgcconfig.render.crosshair_type.desc"))
+                        .setDefaultValue(CrosshairType.DEFAULT).setTooltip(Component.translatable("config.cgcconfig.render.crosshair_type.desc"))
                         .setSaveConsumer(newValue -> RenderConfig.CROSSHAIR_TYPE.set(newValue))
                         .build()
         );

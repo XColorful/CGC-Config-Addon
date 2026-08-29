@@ -23,6 +23,8 @@
   "config.cgcconfig.render.bullet_hole_particle_life.desc": "The existence time of bullet hole particles, in ticks",
   "config.cgcconfig.render.bullet_hole_particle_fade_threshold": "Bullet hole particle fade threshold",
   "config.cgcconfig.render.bullet_hole_particle_fade_threshold.desc": "The threshold for fading out when rendering bullet hole particles",
+  "config.cgcconfig.render.replace_vanilla_crosshair": "Replace vanilla crosshair",
+  "config.cgcconfig.render.replace_vanilla_crosshair.desc": "Whether to replace the vanilla crosshair when holding a gun",
   "config.cgcconfig.render.crosshair_type": "Crosshair type",
   "config.cgcconfig.render.crosshair_type.desc": "The crosshair when holding a gun",
   "config.cgcconfig.render.hit_marker_start_position": "Hit marker start position",
