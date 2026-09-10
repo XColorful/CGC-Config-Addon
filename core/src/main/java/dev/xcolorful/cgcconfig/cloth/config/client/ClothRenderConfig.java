@@ -81,9 +81,21 @@ public class ClothRenderConfig {
                         .build()
         );
         renderConfig.addEntry(
-                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.gun_hud_enable"), RenderConfig.GUN_HUD_ENABLE.get())
-                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.render.gun_hud_enable.desc"))
-                        .setSaveConsumer(newValue -> RenderConfig.GUN_HUD_ENABLE.set(newValue))
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.enable_gun_hud"), RenderConfig.ENABLE_GUN_HUD.get())
+                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.render.enable_gun_hud.desc"))
+                        .setSaveConsumer(newValue -> RenderConfig.ENABLE_GUN_HUD.set(newValue))
+                        .build()
+        );
+        renderConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.keep_display_gun_hud"), RenderConfig.KEEP_DISPLAY_GUN_HUD.get())
+                        .setDefaultValue(false).setTooltip(Component.translatable("config.cgcconfig.render.keep_display_gun_hud.desc"))
+                        .setSaveConsumer(newValue -> RenderConfig.KEEP_DISPLAY_GUN_HUD.set(newValue))
+                        .build()
+        );
+        renderConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.force_display_gun_hud"), RenderConfig.FORCE_DISPLAY_GUN_HUD.get())
+                        .setDefaultValue(false).setTooltip(Component.translatable("config.cgcconfig.render.force_display_gun_hud.desc"))
+                        .setSaveConsumer(newValue -> RenderConfig.FORCE_DISPLAY_GUN_HUD.set(newValue))
                         .build()
         );
         renderConfig.addEntry(
@@ -111,9 +123,9 @@ public class ClothRenderConfig {
                         .build()
         );
         renderConfig.addEntry(
-                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.disable_interact_hud_text"), RenderConfig.DISABLE_INTERACT_HUD_TEXT.get())
-                        .setDefaultValue(false).setTooltip(Component.translatable("config.cgcconfig.render.disable_interact_hud_text.desc"))
-                        .setSaveConsumer(newValue -> RenderConfig.DISABLE_INTERACT_HUD_TEXT.set(newValue))
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.enable_shooter_operation_hud"), RenderConfig.ENABLE_SHOOTER_OPERATION_HUD.get())
+                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.render.enable_shooter_operation_hud.desc"))
+                        .setSaveConsumer(newValue -> RenderConfig.ENABLE_SHOOTER_OPERATION_HUD.set(newValue))
                         .build()
         );
         renderConfig.addEntry(
