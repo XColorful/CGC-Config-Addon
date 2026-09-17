@@ -27,25 +27,29 @@ public class ClothSoundConfig {
 
         soundConfig.addEntry(
                 entryBuilder.startIntField(Component.translatable("config.cgcconfig.sound.hit_sound_concurrency_limit"), SoundConfig.HIT_SOUND_CONCURRENCY_LIMIT.get())
-                        .setDefaultValue(1).setMin(0).setMax(128).setTooltip(Component.translatable("config.cgcconfig.sound.hit_sound_concurrency_limit.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.sound.hit_sound_concurrency_limit.desc"))
+                        .setDefaultValue(1).setMin(0).setMax(128)
                         .setSaveConsumer(newValue -> SoundConfig.HIT_SOUND_CONCURRENCY_LIMIT.set(newValue))
                         .build()
         );
         soundConfig.addEntry(
                 entryBuilder.startIntField(Component.translatable("config.cgcconfig.sound.default_sound_concurrency_limit"), SoundConfig.DEFAULT_SOUND_CONCURRENCY_LIMIT.get())
-                        .setDefaultValue(2).setMin(0).setMax(128).setTooltip(Component.translatable("config.cgcconfig.sound.default_sound_concurrency_limit.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.sound.default_sound_concurrency_limit.desc"))
+                        .setDefaultValue(2).setMin(0).setMax(128)
                         .setSaveConsumer(newValue -> SoundConfig.DEFAULT_SOUND_CONCURRENCY_LIMIT.set(newValue))
                         .build()
         );
         soundConfig.addEntry(
                 entryBuilder.startIntField(Component.translatable("config.cgcconfig.sound.high_frequency_sound_concurrency_limit"), SoundConfig.HIGH_FREQUENCY_SOUND_CONCURRENCY_LIMIT.get())
-                        .setDefaultValue(4).setMin(0).setMax(128).setTooltip(Component.translatable("config.cgcconfig.sound.high_frequency_sound_concurrency_limit.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.sound.high_frequency_sound_concurrency_limit.desc"))
+                        .setDefaultValue(4).setMin(0).setMax(128)
                         .setSaveConsumer(newValue -> SoundConfig.HIGH_FREQUENCY_SOUND_CONCURRENCY_LIMIT.set(newValue))
                         .build()
         );
         soundConfig.addEntry(
                 entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.sound.first_person_animation_sound_tracking"), SoundConfig.FIRST_PERSON_ANIMATION_SOUND_TRACKING.get())
-                        .setDefaultValue(false).setTooltip(Component.translatable("config.cgcconfig.sound.first_person_animation_sound_tracking.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.sound.first_person_animation_sound_tracking.desc"))
+                        .setDefaultValue(false)
                         .setSaveConsumer(newValue -> SoundConfig.FIRST_PERSON_ANIMATION_SOUND_TRACKING.set(newValue))
                         .build()
         );
