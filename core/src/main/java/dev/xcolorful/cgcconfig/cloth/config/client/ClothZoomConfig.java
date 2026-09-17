@@ -27,13 +27,15 @@ public class ClothZoomConfig {
 
         zoomConfig.addEntry(
                 entryBuilder.startDoubleField(Component.translatable("config.cgcconfig.zoom.screen_distance_coefficient"), ZoomConfig.SCREEN_DISTANCE_COEFFICIENT.get())
-                        .setDefaultValue(1.33).setMin(0.0).setMax(3.0).setTooltip(Component.translatable("config.cgcconfig.zoom.screen_distance_coefficient.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.zoom.screen_distance_coefficient.desc"))
+                        .setDefaultValue(1.33).setMin(0.0).setMax(3.0)
                         .setSaveConsumer(newValue -> ZoomConfig.SCREEN_DISTANCE_COEFFICIENT.set(newValue))
                         .build()
         );
         zoomConfig.addEntry(
                 entryBuilder.startDoubleField(Component.translatable("config.cgcconfig.zoom.zoom_sensitivity_base_multiplier"), ZoomConfig.ZOOM_SENSITIVITY_BASE_MULTIPLIER.get())
-                        .setDefaultValue(1.0).setMin(0.0).setMax(2.0).setTooltip(Component.translatable("config.cgcconfig.zoom.zoom_sensitivity_base_multiplier.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.zoom.zoom_sensitivity_base_multiplier.desc"))
+                        .setDefaultValue(1.0).setMin(0.0).setMax(2.0)
                         .setSaveConsumer(newValue -> ZoomConfig.ZOOM_SENSITIVITY_BASE_MULTIPLIER.set(newValue))
                         .build()
         );
