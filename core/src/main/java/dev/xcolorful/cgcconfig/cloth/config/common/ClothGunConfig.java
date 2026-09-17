@@ -27,31 +27,36 @@ public class ClothGunConfig {
 
         gunConfig.addEntry(
                 entryBuilder.startIntField(Component.translatable("config.cgcconfig.gun.default_gun_fire_sound_distance"), GunConfig.DEFAULT_GUN_FIRE_SOUND_DISTANCE.get())
-                        .setDefaultValue(64).setMin(0).setMax(Integer.MAX_VALUE).setTooltip(Component.translatable("config.cgcconfig.gun.default_gun_fire_sound_distance.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.gun.default_gun_fire_sound_distance.desc"))
+                        .setDefaultValue(320).setMin(0).setMax(Integer.MAX_VALUE)
                         .setSaveConsumer(newValue -> GunConfig.DEFAULT_GUN_FIRE_SOUND_DISTANCE.set(newValue))
                         .build()
         );
         gunConfig.addEntry(
                 entryBuilder.startIntField(Component.translatable("config.cgcconfig.gun.default_gun_silence_sound_distance"), GunConfig.DEFAULT_GUN_SILENCE_SOUND_DISTANCE.get())
-                        .setDefaultValue(16).setMin(0).setMax(Integer.MAX_VALUE).setTooltip(Component.translatable("config.cgcconfig.gun.default_gun_silence_sound_distance.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.gun.default_gun_silence_sound_distance.desc"))
+                        .setDefaultValue(256).setMin(0).setMax(Integer.MAX_VALUE)
                         .setSaveConsumer(newValue -> GunConfig.DEFAULT_GUN_SILENCE_SOUND_DISTANCE.set(newValue))
                         .build()
         );
         gunConfig.addEntry(
                 entryBuilder.startIntField(Component.translatable("config.cgcconfig.gun.default_gun_other_sound_distance"), GunConfig.DEFAULT_GUN_OTHER_SOUND_DISTANCE.get())
-                        .setDefaultValue(16).setMin(0).setMax(Integer.MAX_VALUE).setTooltip(Component.translatable("config.cgcconfig.gun.default_gun_other_sound_distance.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.gun.default_gun_other_sound_distance.desc"))
+                        .setDefaultValue(16).setMin(0).setMax(Integer.MAX_VALUE)
                         .setSaveConsumer(newValue -> GunConfig.DEFAULT_GUN_OTHER_SOUND_DISTANCE.set(newValue))
                         .build()
         );
         gunConfig.addEntry(
                 entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.gun.creative_player_consume_ammo"), GunConfig.CREATIVE_PLAYER_CONSUME_AMMO.get())
-                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.gun.creative_player_consume_ammo.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.gun.creative_player_consume_ammo.desc"))
+                        .setDefaultValue(true)
                         .setSaveConsumer(newValue -> GunConfig.CREATIVE_PLAYER_CONSUME_AMMO.set(newValue))
                         .build()
         );
         gunConfig.addEntry(
                 entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.gun.auto_reload_when_respawn"), GunConfig.AUTO_RELOAD_WHEN_RESPAWN.get())
-                        .setDefaultValue(false).setTooltip(Component.translatable("config.cgcconfig.gun.auto_reload_when_respawn.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.gun.auto_reload_when_respawn.desc"))
+                        .setDefaultValue(false)
                         .setSaveConsumer(newValue -> GunConfig.AUTO_RELOAD_WHEN_RESPAWN.set(newValue))
                         .build()
         );
