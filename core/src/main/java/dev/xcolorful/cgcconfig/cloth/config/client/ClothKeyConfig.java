@@ -27,19 +27,22 @@ public class ClothKeyConfig {
 
         keyConfig.addEntry(
                 entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.key.hold_to_aim"), KeyConfig.HOLD_TO_AIM.get())
-                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.key.hold_to_aim.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.key.hold_to_aim.desc"))
+                        .setDefaultValue(false)
                         .setSaveConsumer(newValue -> KeyConfig.HOLD_TO_AIM.set(newValue))
                         .build()
         );
         keyConfig.addEntry(
                 entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.key.hold_to_prone"), KeyConfig.HOLD_TO_PRONE.get())
-                        .setDefaultValue(true).setTooltip(Component.translatable("config.cgcconfig.key.hold_to_prone.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.key.hold_to_prone.desc"))
+                        .setDefaultValue(false)
                         .setSaveConsumer(newValue -> KeyConfig.HOLD_TO_PRONE.set(newValue))
                         .build()
         );
         keyConfig.addEntry(
                 entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.key.auto_reload"), KeyConfig.AUTO_RELOAD.get())
-                        .setDefaultValue(false).setTooltip(Component.translatable("config.cgcconfig.key.auto_reload.desc"))
+                        .setTooltip(Component.translatable("config.cgcconfig.key.auto_reload.desc"))
+                        .setDefaultValue(false)
                         .setSaveConsumer(newValue -> KeyConfig.AUTO_RELOAD.set(newValue))
                         .build()
         );
