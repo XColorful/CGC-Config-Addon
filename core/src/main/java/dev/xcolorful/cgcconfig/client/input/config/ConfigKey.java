@@ -14,7 +14,6 @@
 
 package dev.xcolorful.cgcconfig.client.input.config;
 
-import com.mojang.blaze3d.platform.InputConstants;
 import dev.xcolorful.cgcconfig.CgcConfig;
 import dev.xcolorful.cgcconfig.client.api.minecraft.input._CustomInputKey;
 import dev.xcolorful.cgcconfig.client.init.registry._ClientInputCategory;
@@ -48,7 +47,7 @@ public final class ConfigKey extends InputKey {
         return creator.create(this.key.getCategoryLang().getString(),
                 IKeyConflictContext.Type.IN_GAME,
                 IKeyModifier.Type.ALT,
-                InputConstants.Type.KEYSYM,
+                ClientInputUtils.KeyType.keyboard(),
                 GLFW.GLFW_KEY_T,
                 _ClientInputCategory.CONFIG);
     }
