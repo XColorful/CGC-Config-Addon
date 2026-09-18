@@ -1,10 +1,3 @@
-/*
- * Copyright (c) 2026 XiaoColorful (https://github.com/XColorful)
- * SPDX-License-Identifier: GPL-3.0-only
- *
- * Source: https://github.com/XColorful/Custom-Gun-Continued
- */
-
 package dev.xcolorful.cgcconfig.forgeclient.init;
 
 import dev.xcolorful.cgcconfig.CgcConfig;
