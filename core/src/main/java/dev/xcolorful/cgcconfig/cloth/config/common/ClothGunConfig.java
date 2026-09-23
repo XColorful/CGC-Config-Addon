@@ -33,10 +33,10 @@ public class ClothGunConfig {
                         .build()
         );
         gunConfig.addEntry(
-                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.gun.creative_player_consume_ammo"), GunConfig.CREATIVE_PLAYER_CONSUME_AMMO.get())
-                        .setTooltip(Component.translatable("config.cgcconfig.gun.creative_player_consume_ammo.desc"))
-                        .setDefaultValue(true)
-                        .setSaveConsumer(newValue -> GunConfig.CREATIVE_PLAYER_CONSUME_AMMO.set(newValue))
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.gun.bypass_gun_fire_consumption"), GunConfig.BYPASS_GUN_FIRE_CONSUMPTION.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.gun.bypass_gun_fire_consumption.desc"))
+                        .setDefaultValue(false)
+                        .setSaveConsumer(newValue -> GunConfig.BYPASS_GUN_FIRE_CONSUMPTION.set(newValue))
                         .build()
         );
         gunConfig.addEntry(
