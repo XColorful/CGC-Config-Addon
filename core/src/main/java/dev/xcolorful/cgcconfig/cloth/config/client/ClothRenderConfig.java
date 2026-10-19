@@ -34,6 +34,13 @@ public class ClothRenderConfig {
                         .build()
         );
         renderConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.render_first_person_invisible_arm"), RenderConfig.RENDER_FIRST_PERSON_INVISIBLE_ARM.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.render.render_first_person_invisible_arm.desc"))
+                        .setDefaultValue(false)
+                        .setSaveConsumer(newValue -> RenderConfig.RENDER_FIRST_PERSON_INVISIBLE_ARM.set(newValue))
+                        .build()
+        );
+        renderConfig.addEntry(
                 entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.render.replace_vanilla_crosshair"), RenderConfig.REPLACE_VANILLA_CROSSHAIR.get())
                         .setTooltip(Component.translatable("config.cgcconfig.render.replace_vanilla_crosshair.desc"))
                         .setDefaultValue(true)
@@ -73,6 +80,13 @@ public class ClothRenderConfig {
                         .setTooltip(Component.translatable("config.cgcconfig.render.enable_shooter_operation_hud.desc"))
                         .setDefaultValue(true)
                         .setSaveConsumer(newValue -> RenderConfig.ENABLE_SHOOTER_OPERATION_HUD.set(newValue))
+                        .build()
+        );
+        renderConfig.addEntry(
+                entryBuilder.startIntField(Component.translatable("config.cgcconfig.render.gun_description_width"), RenderConfig.GUN_DESCRIPTION_WIDTH.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.render.gun_description_width.desc"))
+                        .setDefaultValue(180).setMin(90).setMax(270)
+                        .setSaveConsumer(newValue -> RenderConfig.GUN_DESCRIPTION_WIDTH.set(newValue))
                         .build()
         );
         renderConfig.addEntry(

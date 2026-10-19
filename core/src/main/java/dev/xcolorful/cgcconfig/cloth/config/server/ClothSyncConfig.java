@@ -109,6 +109,27 @@ public class ClothSyncConfig {
                         .build()
         );
         misc.add(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.sync.misc.enable_prone_pitch"), SyncConfig.ENABLE_PRONE_PITCH_LIMIT.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.sync.misc.enable_prone_pitch.desc"))
+                        .setDefaultValue(true)
+                        .setSaveConsumer(newValue -> SyncConfig.ENABLE_PRONE_PITCH_LIMIT.set(newValue))
+                        .build()
+        );
+        misc.add(
+                entryBuilder.startDoubleField(Component.translatable("config.cgcconfig.sync.misc.max_prone_pitch"), SyncConfig.MAX_PRONE_PITCH.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.sync.misc.max_prone_pitch.desc"))
+                        .setDefaultValue(25.0).setMin(0.0).setMax(90.0)
+                        .setSaveConsumer(newValue -> SyncConfig.MAX_PRONE_PITCH.set(newValue))
+                        .build()
+        );
+        misc.add(
+                entryBuilder.startDoubleField(Component.translatable("config.cgcconfig.sync.misc.min_prone_pitch"), SyncConfig.MIN_PRONE_PITCH.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.sync.misc.min_prone_pitch.desc"))
+                        .setDefaultValue(-20.0).setMin(-90.0).setMax(0.0)
+                        .setSaveConsumer(newValue -> SyncConfig.MIN_PRONE_PITCH.set(newValue))
+                        .build()
+        );
+        misc.add(
                 entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.sync.misc.server_shoot_network_v"), SyncConfig.SERVER_SHOOT_NETWORK_V.get())
                         .setTooltip(Component.translatable("config.cgcconfig.sync.misc.server_shoot_network_v.desc"))
                         .setDefaultValue(true)
