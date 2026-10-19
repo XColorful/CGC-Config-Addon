@@ -12,6 +12,27 @@ public class ClothZoomConfig {
         ConfigCategory zoomConfig = builder.getOrCreateCategory(Component.translatable("config.cgcconfig.zoom"));
 
         zoomConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.zoom.enable_scrolling_zoom"), ZoomConfig.ENABLE_SCROLLING_ZOOM.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.zoom.enable_scrolling_zoom.desc"))
+                        .setDefaultValue(true)
+                        .setSaveConsumer(newValue -> ZoomConfig.ENABLE_SCROLLING_ZOOM.set(newValue))
+                        .build()
+        );
+        zoomConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.zoom.scrolling_zoom_cycle"), ZoomConfig.SCROLLING_ZOOM_CYCLE.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.zoom.scrolling_zoom_cycle.desc"))
+                        .setDefaultValue(false)
+                        .setSaveConsumer(newValue -> ZoomConfig.SCROLLING_ZOOM_CYCLE.set(newValue))
+                        .build()
+        );
+        zoomConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.zoom.invert_scrolling_zoom"), ZoomConfig.INVERT_SCROLLING_ZOOM.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.zoom.invert_scrolling_zoom.desc"))
+                        .setDefaultValue(true)
+                        .setSaveConsumer(newValue -> ZoomConfig.INVERT_SCROLLING_ZOOM.set(newValue))
+                        .build()
+        );
+        zoomConfig.addEntry(
                 entryBuilder.startDoubleField(Component.translatable("config.cgcconfig.zoom.screen_distance_coefficient"), ZoomConfig.SCREEN_DISTANCE_COEFFICIENT.get())
                         .setTooltip(Component.translatable("config.cgcconfig.zoom.screen_distance_coefficient.desc"))
                         .setDefaultValue(1.33).setMin(0.0).setMax(3.0)

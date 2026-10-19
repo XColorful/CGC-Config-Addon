@@ -63,9 +63,7 @@ public final class ConfigKey extends InputKey {
         this.onConfigKeyInput(event.getAction());
     }
     private void onConfigKeyInput(int action) {
-        if (action != GLFW.GLFW_PRESS
-                || !this.keyMapping.getKeyModifier().isActive(this.keyMapping.getKeyConflictContext()) // modifier键
-        ) return;
+        if (action != GLFW.GLFW_PRESS) return;
 
         if (!ClientInputUtils.isInGameWorld()) return; // 不在游戏界面
 
