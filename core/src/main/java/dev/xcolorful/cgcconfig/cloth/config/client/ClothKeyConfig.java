@@ -19,6 +19,20 @@ public class ClothKeyConfig {
                         .build()
         );
         keyConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.key.aim_switch_to_first_person"), KeyConfig.AIM_SWITCH_TO_FIRST_PERSON.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.key.aim_switch_to_first_person.desc"))
+                        .setDefaultValue(true)
+                        .setSaveConsumer(newValue -> KeyConfig.AIM_SWITCH_TO_FIRST_PERSON.set(newValue))
+                        .build()
+        );
+        keyConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.key.revert_aim_perspective"), KeyConfig.REVERT_AIM_PERSPECTIVE.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.key.revert_aim_perspective.desc"))
+                        .setDefaultValue(true)
+                        .setSaveConsumer(newValue -> KeyConfig.REVERT_AIM_PERSPECTIVE.set(newValue))
+                        .build()
+        );
+        keyConfig.addEntry(
                 entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.key.hold_to_prone"), KeyConfig.HOLD_TO_PRONE.get())
                         .setTooltip(Component.translatable("config.cgcconfig.key.hold_to_prone.desc"))
                         .setDefaultValue(false)
@@ -26,10 +40,24 @@ public class ClothKeyConfig {
                         .build()
         );
         keyConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.key.hold_shoot_prevent_bolt"), KeyConfig.HOLD_SHOOT_PREVENT_BOLT.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.key.hold_shoot_prevent_bolt.desc"))
+                        .setDefaultValue(true)
+                        .setSaveConsumer(newValue -> KeyConfig.HOLD_SHOOT_PREVENT_BOLT.set(newValue))
+                        .build()
+        );
+        keyConfig.addEntry(
                 entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.key.auto_reload"), KeyConfig.AUTO_RELOAD.get())
                         .setTooltip(Component.translatable("config.cgcconfig.key.auto_reload.desc"))
                         .setDefaultValue(false)
                         .setSaveConsumer(newValue -> KeyConfig.AUTO_RELOAD.set(newValue))
+                        .build()
+        );
+        keyConfig.addEntry(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.key.shoot_to_reload"), KeyConfig.SHOOT_TO_RELOAD.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.key.shoot_to_reload.desc"))
+                        .setDefaultValue(true)
+                        .setSaveConsumer(newValue -> KeyConfig.SHOOT_TO_RELOAD.set(newValue))
                         .build()
         );
     }
