@@ -3,6 +3,7 @@ package dev.xcolorful.cgcconfig.cloth.init;
 import dev.xcolorful.cgcconfig.cloth.config.common.ClothAmmoConfig;
 import dev.xcolorful.cgcconfig.cloth.config.common.ClothGunConfig;
 import dev.xcolorful.cgcconfig.cloth.config.common.ClothOtherConfig;
+import dev.xcolorful.cgcconfig.cloth.config.common.ClothShooterConfig;
 import dev.xcolorful.cgcconfig.cloth.config.server.ClothSyncConfig;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
@@ -32,6 +33,7 @@ public class ClothModConfig {
                 ClothAmmoConfig.init(builder, entryBuilder);
                 ClothGunConfig.init(builder, entryBuilder);
                 ClothOtherConfig.init(builder, entryBuilder);
+                ClothShooterConfig.init(builder, entryBuilder);
             }
 
             builder.setGlobalized(true);
