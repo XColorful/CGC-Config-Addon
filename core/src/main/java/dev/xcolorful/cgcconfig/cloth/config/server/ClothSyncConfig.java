@@ -130,6 +130,27 @@ public class ClothSyncConfig {
                         .build()
         );
         misc.add(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.sync.misc.enable_sprint_while_shooting"), SyncConfig.ENABLE_SPRINT_WHILE_SHOOTING.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.sync.misc.enable_sprint_while_shooting.desc"))
+                        .setDefaultValue(true)
+                        .setSaveConsumer(newValue -> SyncConfig.ENABLE_SPRINT_WHILE_SHOOTING.set(newValue))
+                        .build()
+        );
+        misc.add(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.sync.misc.enable_sprint_while_aiming"), SyncConfig.ENABLE_SPRINT_WHILE_AIMING.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.sync.misc.enable_sprint_while_aiming.desc"))
+                        .setDefaultValue(false)
+                        .setSaveConsumer(newValue -> SyncConfig.ENABLE_SPRINT_WHILE_AIMING.set(newValue))
+                        .build()
+        );
+        misc.add(
+                entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.sync.misc.enable_sprint_while_reloading"), SyncConfig.ENABLE_SPRINT_WHILE_RELOADING.get())
+                        .setTooltip(Component.translatable("config.cgcconfig.sync.misc.enable_sprint_while_reloading.desc"))
+                        .setDefaultValue(false)
+                        .setSaveConsumer(newValue -> SyncConfig.ENABLE_SPRINT_WHILE_RELOADING.set(newValue))
+                        .build()
+        );
+        misc.add(
                 entryBuilder.startBooleanToggle(Component.translatable("config.cgcconfig.sync.misc.server_shoot_network_v"), SyncConfig.SERVER_SHOOT_NETWORK_V.get())
                         .setTooltip(Component.translatable("config.cgcconfig.sync.misc.server_shoot_network_v.desc"))
                         .setDefaultValue(true)
