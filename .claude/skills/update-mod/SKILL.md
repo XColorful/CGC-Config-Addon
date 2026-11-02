@@ -4,7 +4,7 @@ description: 本模组的一般更新流程，大多数时候都是相同的流�
 ---
 
 更新模组时默认有IDEA MCP浏览CGC Config Addon和Custom Gun Continued
-- CGC Config Addon必须是core1.20.1分支
+- CGC Config Addon必须是core1.20.1分支，若为1.20.xforge则直接切换至core1.20.1
 - Custom Gun Continued必须是core1.20.1或1.20.1分支
 - 如果缺少IDEA环境或者分支错误，则需要先提示用户
 
@@ -87,3 +87,4 @@ Custom Gun Continued
 在已经push到远程后，提示用户是否需要执行清理
 - 将各分支构建完的产物复制到`D:\Temp-File\`，如果不存在文件夹，则通知是否需要另外放置
 - 清理所有本地worktree中被`./.gitignore`忽略的文件，保留各worktree的`./.idea`、`./forge-compat/build/libs`、`./neoforge-compat/build/libs`
+- 清理完成后，再将1.20.xforge切换回core1.20.1
