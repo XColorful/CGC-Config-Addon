@@ -1,5 +1,9 @@
 ### 26.11
 
+#### 26.11.36
+26.3+:
+- Fixed key bindings not being saved
+
 #### 26.11.35
 - Port to Custom Gun Continued 26.11.35
 
