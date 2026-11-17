@@ -34,7 +34,7 @@ public final class ConfigKey extends InputKey {
                 IKeyConflictContext.Type.IN_GAME,
                 IKeyModifier.Type.ALT,
                 ClientInputUtils.KeyType.keyboard(),
-                GLFW.GLFW_KEY_T,
+                ClientInputUtils.KeyCode._KEY_T(),
                 _ClientInputCategory.CONFIG);
     }
 
